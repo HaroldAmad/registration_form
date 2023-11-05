@@ -10,6 +10,7 @@ require_once "includes/dbh.inc.php";
     <title>Document</title>
 </head>
 <body>
+    <a href="includes/logout.inc.php">Logout</a>
     <?php
     session_start();
     $info = get_info($pdo, $_SESSION["user_id"]);
